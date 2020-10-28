@@ -1,0 +1,10 @@
+.bg-blue-registroverificar {
+	/*background: linear-gradient(*/
+	/*		to bottom,*/
+	/*		#2c387e 0%,*/
+	/*		#2c387e 50%,*/
+	/*		rgb(235, 235, 235) 50%,*/
+	/*		rgb(235, 235, 235) 100%*/
+	/*);*/
+	background: rgba(0, 0, 0, 0.2) !important;
+}

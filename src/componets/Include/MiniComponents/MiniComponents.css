@@ -1,0 +1,27 @@
+.react-contextmenu-item:focus {
+	outline: none !important;
+	outline-width: 0 !important;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.react-contextmenu-item.react-contextmenu-item--selected {
+	background: linear-gradient(to top, #555, #444);
+	color: #e9e9e9;
+}
+
+.react-contextmenu-item.react-contextmenu-item--selected:hover {
+	background: linear-gradient(to top, #555, #333);
+	color: white;
+}
+
+.react-contextmenu-item.react-contextmenu-item--selected:active {
+	background: linear-gradient(to top, #555, #444);
+	color: #e9e9e9;
+}
+
+.react-contextmenu-item.react-contextmenu-item--selected:disabled {
+	pointer-events: none;
+	color: #999999;
+}

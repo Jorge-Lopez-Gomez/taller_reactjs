@@ -1,0 +1,548 @@
+@px: "px";
+@porcentaje: "%";
+@vh: "vh";
+@vw: "vw";
+@negativo: "-";
+
+//HEIGHT-HEIGHT-HEIGHT-HEIGHT-HEIGHT-HEIGHT-HEIGHT-HEIGHT-HEIGHT
+//HEIGHT-HEIGHT-HEIGHT-HEIGHT-HEIGHT-HEIGHT-HEIGHT-HEIGHT-HEIGHT
+//HEIGHT-HEIGHT-HEIGHT-HEIGHT-HEIGHT-HEIGHT-HEIGHT-HEIGHT-HEIGHT
+
+//css/import/height/height.css
+
+each(range(0,1000), {
+  @val: @{value}@{px};
+  .h-@{value}-px {
+      height: @val !important;
+  }
+});
+
+each(range(2,10), {
+  @val: @{value};
+  .h-100-@{value} {
+      height: calc(100% / @val) !important;
+  }
+});
+
+each(range(2,10), {
+  @val: @{value};
+  .h-100--@{value} {
+      height: calc(100% - (100% / @val)) !important;
+  }
+});
+
+each(range(0,100), {
+  @val: @{value}@{porcentaje};
+  .h-@{value} {
+      height: @val !important;
+  }
+});
+
+each(range(0,500), {
+  @val: @{value}@{vh};
+  .h-@{value}-vh {
+      height: @val !important;
+  }
+});
+
+//css/import/height/height-px.css
+
+each(range(0,500), {
+  @val: @{value}@{px};
+  .h-@{value}-px {
+      height: @val !important;
+  }
+});
+
+each(range(0,500), {
+  @val: @{value}@{px};
+  .h-100-@{value}-px {
+      height: calc(100% - @val) !important;
+  }
+});
+
+each(range(0,500), {
+  @val: @{value}@{px};
+  .h-50-@{value}-px {
+      height: calc(50% - @val) !important;
+  }
+});
+
+each(range(0,500), {
+  @val: @{value}@{px};
+  .h-100-@{value}-px-mas {
+      height: calc(100% + @val) !important;
+  }
+});
+
+each(range(0,500), {
+  @val: @{value}@{px};
+  .h-50-@{value}-px-mas {
+      height: calc(50% + @val) !important;
+  }
+});
+
+//css/import/height/max-height.css
+
+.max-h-100 {
+  max-height: 100% !important;
+}
+
+each(range(0,500), {
+  @val: @{value}@{px};
+  .max-h-100-@{value}-px {
+      max-height: calc(100% - @val) !important;
+  }
+});
+
+//css/import/height/max-height-px.css
+
+each(range(0,500), {
+  @val: @{value}@{px};
+  .max-h-@{value}-px {
+      max-height: @val !important;
+  }
+});
+
+each(range(1,10), {
+  @val: @{value}@{px};
+  @pixel: (@value * 100);
+  .max-h-@{pixel}-px {
+    max-height: calc(@val  * 100) !important;
+  }
+});
+
+//css/import/height/min-height.css
+
+.min-h-100 {
+  min-height: 100% !important;
+}
+
+each(range(0,500), {
+  @val: @{value}@{px};
+  .min-h-100-@{value}-px {
+      min-height: calc(100% - @val) !important;
+  }
+});
+
+//css/import/height/min-height-px.css
+
+each(range(0,500), {
+  @val: @{value}@{px};
+  .min-h-@{value}-px {
+      min-height: @val !important;
+  }
+});
+
+//WIDTH-WIDTH-WIDTH-WIDTH-WIDTH-WIDTH-WIDTH-WIDTH-WIDTH
+//WIDTH-WIDTH-WIDTH-WIDTH-WIDTH-WIDTH-WIDTH-WIDTH-WIDTH
+//WIDTH-WIDTH-WIDTH-WIDTH-WIDTH-WIDTH-WIDTH-WIDTH-WIDTH
+
+//css/import/width/width.css
+
+
+each(range(0,1000), {
+  @val: @{value}@{px};
+  .w-@{value}-px {
+      width: @val !important;
+  }
+});
+
+each(range(2,10), {
+  @val: @{value};
+  .w-100-@{value} {
+      width: calc(100% / @val) !important;
+  }
+});
+
+each(range(2,10), {
+  @val: @{value};
+  .w-100--@{value} {
+      width: calc(100% - (100% / @val)) !important;
+  }
+});
+
+each(range(0,100), {
+  @val: @{value}@{porcentaje};
+  .w-@{value} {
+      width: @val !important;
+  }
+});
+
+each(range(0,500), {
+  @val: @{value}@{vw};
+  .w-@{value}-vw {
+      width: @val !important;
+  }
+});
+
+//css/import/width/width-px.css
+
+each(range(0,500), {
+  @val: @{value}@{px};
+  .w-@{value}-px {
+      width: @val !important;
+  }
+});
+
+each(range(0,500), {
+  @val: @{value}@{px};
+  .w-100-@{value}-px {
+      width: calc(100% - @val) !important;
+  }
+});
+
+each(range(0,500), {
+  @val: @{value}@{px};
+  .w-50-@{value}-px {
+      width: calc(50% - @val) !important;
+  }
+});
+
+each(range(0,500), {
+  @val: @{value}@{px};
+  .w-100-@{value}-px-mas {
+      width: calc(100% + @val) !important;
+  }
+});
+
+each(range(0,500), {
+  @val: @{value}@{px};
+  .w-50-@{value}-px-mas {
+      width: calc(50% + @val) !important;
+  }
+});
+
+//css/import/width/max-width.css
+
+.max-w-100 {
+  max-width: 100% !important;
+}
+
+each(range(0,500), {
+  @val: @{value}@{px};
+  .max-w-100-@{value}-px {
+      max-width: calc(100% - @val) !important;
+  }
+});
+
+//css/import/width/max-width-px.css
+
+each(range(0,500), {
+  @val: @{value}@{px};
+  .max-w-@{value}-px {
+      max-width: @val !important;
+  }
+});
+
+each(range(1,10), {
+  @val: @{value}@{px};
+  @pixel: (@value * 100);
+  .max-w-@{pixel}-px {
+    max-width: calc(@val  * 100) !important;
+  }
+});
+
+//css/import/width/min-width.css
+
+.min-w-100 {
+  min-width: 100% !important;
+}
+
+each(range(0,500), {
+  @val: @{value}@{px};
+  .min-w-100-@{value}-px {
+      min-width: calc(100% - @val) !important;
+  }
+});
+
+//css/import/width/min-width-px.css
+
+each(range(0,500), {
+  @val: @{value}@{px};
+  .min-w-@{value}-px {
+      min-width: @val !important;
+  }
+});
+
+// OTRO-OTRO-OTRO-OTRO-OTRO-OTRO-OTRO-OTRO-OTRO-OTRO-OTRO-OTRO-OTRO-OTRO
+// OTRO-OTRO-OTRO-OTRO-OTRO-OTRO-OTRO-OTRO-OTRO-OTRO-OTRO-OTRO-OTRO-OTRO
+// OTRO-OTRO-OTRO-OTRO-OTRO-OTRO-OTRO-OTRO-OTRO-OTRO-OTRO-OTRO-OTRO-OTRO
+
+//css/import/border.css
+
+each(range(0,30), {
+  @val: @{value}@{px};
+  .border-@{value} { border-width: @val !important; }
+});
+
+each(range(0,30), {
+  @val: @{value}@{px};
+  .border-@{value}-T { border-top-width: @val !important; }
+});
+
+each(range(0,30), {
+  @val: @{value}@{px};
+  .border-@{value}-R { border-right-width: @val !important; }
+});
+
+each(range(0,30), {
+  @val: @{value}@{px};
+  .border-@{value}-B { border-bottom-width: @val !important; }
+});
+
+each(range(0,30), {
+  @val: @{value}@{px};
+  .border-@{value}-L { border-left-width: @val !important; }
+});
+
+//css/import/border-radius.css
+
+each(range(1,50), {
+  @val: @{value}@{px};
+  .b-r-@{value} {border-top-left-radius: @val !important;}
+  .b-r-@{value} {border-top-right-radius: @val !important;}
+  .b-r-@{value} {border-bottom-left-radius: @val !important;}
+  .b-r-@{value} {border-bottom-right-radius: @val !important;}
+});
+
+//css/import/font-size-placeholder.css
+
+each(range(1,500), {
+  @val: @{value}@{px};
+  .px-@{value} { font-size: @val !important; }
+  .px-@{value}::-webkit-input-placeholder { font-size: @val !important; }
+  .px-@{value}::-moz-placeholder { font-size: @val !important; }
+  .px-@{value}:-ms-input-placeholder { font-size: @val !important; }
+  .px-@{value}:-moz-placeholder { font-size: @val !important; }
+  .px-@{value} span { font-size: @val !important; }
+});
+
+//css/import/line-height-px.css
+
+each(range(1,500), {
+  @val: @{value}@{px};
+  .l-h-@{value}-px, .l-h-@{value}-px span {
+    line-height: @val !important;
+  }
+});
+
+//css/import/margin.css
+
+each(range(0,500), {
+  @val: @{value}@{px};
+  .margin-@{value} {
+      margin-top: @val !important;
+      margin-right: @val !important;
+      margin-bottom: @val !important;
+      margin-left: @val !important;
+  }
+});
+
+each(range(0,500), {
+  @val: @{value}@{px};
+  .margin-@{value}-T { margin-top: @val !important;}
+  .margin-@{value}-R { margin-right: @val !important;}
+  .margin-@{value}-B { margin-bottom: @val !important;}
+  .margin-@{value}-L { margin-left: @val !important;}
+});
+
+//css/import/margin-negativo.css
+
+each(range(0,500), {
+  @val: @{negativo}@{value}@{px};
+  .margin--@{value} {margin: @val !important; }
+  .margin--@{value}-T {margin-top: @val !important; }
+  .margin--@{value}-R {margin-right: @val !important; }
+  .margin--@{value}-B {margin-bottom: @val !important; }
+  .margin--@{value}-L {margin-left: @val !important; }
+});
+
+//css/import/padding.css
+
+each(range(0,500), {
+  @val: @{value}@{px};
+  .padding-@{value} {
+      padding-top: @val !important;
+      padding-right: @val !important;
+      padding-bottom: @val !important;
+      padding-left: @val !important;
+  }
+});
+
+each(range(0,500), {
+  @val: @{value}@{px};
+  .padding-@{value}-T { padding-top: @val !important;}
+  .padding-@{value}-R { padding-right: @val !important;}
+  .padding-@{value}-B { padding-bottom: @val !important;}
+  .padding-@{value}-L { padding-left: @val !important;}
+});
+
+//css/import/top-right-bottom-left.css
+//css/import/top-right-bottom-left-negativo.css
+
+each(range(0,500), {
+  @val: @{value}@{px};
+  .top-@{value} { top: @val !important; }
+  .right-@{value} { right: @val !important; }
+  .bottom-@{value} { bottom: @val !important; }
+  .left-@{value} { left: @val !important; }
+});
+
+
+each(range(0,500), {
+  @val: @{negativo}@{value}@{px};
+  .top--@{value} { top: @val !important; }
+  .right--@{value} { right: @val !important; }
+  .bottom--@{value} { bottom: @val !important; }
+  .left--@{value} { left: @val !important; }
+});
+
+//css/import/grid-10.css
+//css/import/grid-20.css
+//css/import/grid-30.css
+
+.FunctionGrid(@min, @max, @padding) {
+  each(range(@min,@max), {
+      @val: @{value}@{px};
+      @padd: @{padding}@{px};
+      @clase: @{padding}@{negativo}@{value};
+      grid-@{clase}-px, .grid-@{clase}-px {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(@val, 1fr));
+          grid-gap: @padd;
+      }
+      @media (max-width: calc(@val + 70px)) {
+        grid-@{clase}-px, .grid-@{clase}-px {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+          grid-gap: @padd;
+        }
+      }
+  });
+}
+
+.FunctionGrid(1, 500, 10);
+
+.FunctionGrid(1, 500, 15);
+
+.FunctionGrid(1, 500, 20);
+
+.FunctionGrid(1, 500, 30);
+
+each(range(1,100), {
+  .rem-@{value} { font-size: (@value * 0.0625rem)!important; }
+  .rem-@{value}::-webkit-input-placeholder { font-size: (@value * 0.0625rem)!important; }
+  .rem-@{value}::-moz-placeholder {  font-size: (@value * 0.0625rem)!important;  }
+  .rem-@{value}:-ms-input-placeholder {  font-size: (@value * 0.0625rem)!important;  }
+  .rem-@{value}:-moz-placeholder {  font-size: (@value * 0.0625rem)!important;  }
+});
+
+.FunctionBorder(@index) {
+
+  @pixel: (@index * 1px);
+  @cero: (0px);
+
+  .border-@{index}T-0R-0B-0L {
+      border-top-width: @pixel !important;
+      border-right-width: @cero !important;
+      border-bottom-width: @cero !important;
+      border-left-width: @cero !important;
+  }
+
+  .border-0T-@{index}R-0B-0L {
+      border-top-width: @cero !important;
+      border-right-width: @pixel !important;
+      border-bottom-width: @cero !important;
+      border-left-width: @cero !important;
+  }
+
+  .border-0T-0R-@{index}B-0L {
+      border-top-width: @cero !important;
+      border-right-width: @cero !important;
+      border-bottom-width: @pixel !important;
+      border-left-width: @cero !important;
+  }
+
+  .border-0T-0R-0B-@{index}L {
+      border-top-width: @cero !important;
+      border-right-width: @cero !important;
+      border-bottom-width: @cero !important;
+      border-left-width: @pixel !important;
+  }
+
+  .border-@{index}T-@{index}R-0B-0L {
+      border-top-width: @pixel !important;
+      border-right-width: @pixel !important;
+      border-bottom-width: @cero !important;
+      border-left-width: @cero !important;
+  }
+
+  .border-@{index}T-0R-@{index}B-0L {
+      border-top-width: @pixel !important;
+      border-right-width: @cero !important;
+      border-bottom-width: @pixel !important;
+      border-left-width: @cero !important;
+  }
+
+  .border-@{index}T-0R-0B-@{index}L {
+      border-top-width: @pixel !important;
+      border-right-width: @cero !important;
+      border-bottom-width: @cero !important;
+      border-left-width: @pixel !important;
+  }
+
+
+  .border-@{index}T-@{index}R-@{index}B-0L {
+      border-top-width: @pixel !important;
+      border-right-width: @pixel !important;
+      border-bottom-width: @pixel !important;
+      border-left-width: @cero !important;
+  }
+
+  .border-@{index}T-@{index}R-0B-@{index}L {
+      border-top-width: @pixel !important;
+      border-right-width: @pixel !important;
+      border-bottom-width: @cero !important;
+      border-left-width: @pixel !important;
+  }
+
+  .border-@{index}T-@{index}R-@{index}B-@{index}L {
+      border-top-width: @pixel !important;
+      border-right-width: @pixel !important;
+      border-bottom-width: @pixel !important;
+      border-left-width: @pixel !important;
+  }
+
+}
+
+
+.FunctionBorderCero() {
+  .border-0T-0R-0B-0L {
+      border-top-width: 0px !important;
+      border-right-width: 0px !important;
+      border-bottom-width: 0px !important;
+      border-left-width: 0px !important;
+  }
+}
+
+.FunctionBorder(1);
+.FunctionBorder(2);
+.FunctionBorder(3);
+.FunctionBorder(4);
+.FunctionBorder(5);
+.FunctionBorderCero();
+
+each(range(0, 20), {
+  @pixel: (@value - 20);
+  .letter-spacing-@{pixel} {
+    letter-spacing: (@pixel / 10px)!important;
+  }
+});
+
+each(range(1, 20), {
+  @pixel: (@value * 1);
+  .letter-spacing-@{pixel} {
+    letter-spacing: (@pixel / 10px)!important;
+  }
+});

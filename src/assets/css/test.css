@@ -1,0 +1,61 @@
+.max-h-100-px {
+  max-height: calc(1px * 100) !important;
+}
+.max-h-200-px {
+  max-height: calc(2px * 100) !important;
+}
+.max-h-300-px {
+  max-height: calc(3px * 100) !important;
+}
+.max-h-400-px {
+  max-height: calc(4px * 100) !important;
+}
+.max-h-500-px {
+  max-height: calc(5px * 100) !important;
+}
+.max-h-600-px {
+  max-height: calc(6px * 100) !important;
+}
+.max-h-700-px {
+  max-height: calc(7px * 100) !important;
+}
+.max-h-800-px {
+  max-height: calc(8px * 100) !important;
+}
+.max-h-900-px {
+  max-height: calc(9px * 100) !important;
+}
+.max-h-1000-px {
+  max-height: calc(10px * 100) !important;
+}
+.max-w-100-px {
+  max-width: calc(1px * 100) !important;
+}
+.max-w-200-px {
+  max-width: calc(2px * 100) !important;
+}
+.max-w-300-px {
+  max-width: calc(3px * 100) !important;
+}
+.max-w-400-px {
+  max-width: calc(4px * 100) !important;
+}
+.max-w-500-px {
+  max-width: calc(5px * 100) !important;
+}
+.max-w-600-px {
+  max-width: calc(6px * 100) !important;
+}
+.max-w-700-px {
+  max-width: calc(7px * 100) !important;
+}
+.max-w-800-px {
+  max-width: calc(8px * 100) !important;
+}
+.max-w-900-px {
+  max-width: calc(9px * 100) !important;
+}
+.max-w-1000-px {
+  max-width: calc(10px * 100) !important;
+}
+/*# sourceMappingURL=test.css.map */
